@@ -4,7 +4,7 @@ import RandomColor from "./Components/RandomColor";
 import Rating from "./Components/Rating/Rating";
 import ImageSlider from "./Components/ImageSlider";
 import LoadMore from "./Components/LoadMore/LoadMoreGrid";
-
+import QRGenerator from "./Components/QRGenerator";
 function App() {
   return (
     <>
@@ -13,6 +13,7 @@ function App() {
       {/* <Rating starNum={10} /> */}
       {/* <ImageSlider url={"https://picsum.photos/v2/list"} /> */}
       {/* <LoadMore url={"https://picsum.photos/v2/list"} pageSize={12} /> */}
+      <QRGenerator />
     </>
   );
 }
