@@ -1,0 +1,106 @@
+/* Simple CSS for ImageSlider */
+.slider-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 220px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  padding: 24px 0;
+}
+.slider-content {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.slider-img-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 320px;
+}
+.slider-img {
+  width: 320px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid #e3e3e3;
+  background: #fff;
+  transition: box-shadow 0.2s, border 0.2s;
+}
+.slider-img:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+  border: 2px solid #007bff;
+}
+.slider-caption {
+  margin-top: 12px;
+  font-size: 1.1rem;
+  color: #222;
+  font-weight: 500;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 6px;
+  padding: 4px 16px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+  margin-bottom: 8px;
+}
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 18px;
+}
+.slider-dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #ccc;
+  display: inline-block;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s, border 0.2s;
+  border: 2.5px solid #bbb;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+.slider-dot:hover {
+  background: #b3d7ff;
+  border-color: #007bff;
+}
+.slider-dot.active {
+  background: #007bff;
+  border-color: #007bff;
+  transform: scale(1.25);
+  box-shadow: 0 2px 8px rgba(0, 123, 255, 0.12);
+}
+.slider-btn {
+  background: #fff;
+  border: 2px solid #007bff;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s, border 0.2s;
+  font-size: 1.6rem;
+  color: #007bff;
+  margin: 0 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+.slider-btn:hover {
+  background: #007bff;
+  color: #fff;
+  border-color: #0056b3;
+  box-shadow: 0 2px 12px rgba(0, 123, 255, 0.18);
+}
+.slider-loading,
+.slider-error,
+.slider-empty {
+  color: #888;
+  font-size: 1.1rem;
+  text-align: center;
+  width: 100%;
+}
