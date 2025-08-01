@@ -6,8 +6,8 @@
 // import QRGenerator from "./Components/QRGenerator";
 // import TodoApp from "./Components/TodoApp/TodoApp";
 // import { ThemeProvider } from "./Components/TodoApp/ThemeContext";
-import RandomBGInterval from "./Components/RandomBackgoundInterval";
-
+// import RandomBGInterval from "./Components/RandomBackgoundInterval";
+import Calculator from "./Components/Calculator";
 function App() {
   return (
     <>
@@ -20,7 +20,8 @@ function App() {
       {/* <ThemeProvider>
         <TodoApp />
       </ThemeProvider> */}
-      <RandomBGInterval />
+      {/* <RandomBGInterval /> */}
+      <Calculator />
     </>
   );
 }
