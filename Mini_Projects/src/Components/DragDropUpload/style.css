@@ -1,0 +1,268 @@
+/* ===== MAIN CONTAINER - OPTIMIZED FOR LARGE SCREENS ===== */
+.main-container {
+  max-width: 933px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #7a8fea 0%, #a072cd 100%);
+  min-height: 100vh;
+}
+
+.main-container h1 {
+  text-align: center;
+  color: white;
+  margin-bottom: 2.7rem;
+  font-size: 2rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+  letter-spacing: 1px;
+}
+
+/* ===== LAYOUT CONTAINER (2 COLUMNS) - DESKTOP OPTIMIZED ===== */
+.layout-container {
+  display: grid;
+  grid-template-columns: 367px 400px;
+  gap: 2.7rem;
+  justify-content: center;
+  align-items: start;
+}
+
+/* ===== UPLOAD SECTION (LEFT) - ENHANCED ===== */
+.upload-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 13px;
+  box-shadow: 0 8px 27px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.upload-section h2 {
+  color: #333;
+  margin-bottom: 1.3rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* Error message */
+.error-message {
+  background: #ffebee;
+  color: #d32f2f;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border-left: 4px solid #d32f2f;
+}
+
+/* Drop zone - SIMPLIFIED */
+.drop-zone {
+  border: 3px dashed #ddd;
+  border-radius: 11px;
+  padding: 2.7rem 2rem;
+  text-align: center;
+  background: #fafafa;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 1.3rem;
+  min-height: 133px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.drop-zone.highlight {
+  border-color: #4caf50;
+  background: #e8f5e8;
+}
+
+.drop-zone:hover {
+  border-color: #2196f3;
+  background: #e3f2fd;
+}
+
+.file-info {
+  color: #4caf50;
+  font-weight: 600;
+  font-size: 0.73rem;
+}
+
+.file-info p {
+  margin: 0.53rem 0;
+  padding: 0.33rem;
+  background: rgba(76, 175, 80, 0.1);
+  border-radius: 5px;
+}
+
+/* File button - SIMPLIFIED */
+.file-button {
+  display: block;
+  background: #2196f3;
+  color: white;
+  padding: 0.8rem 1.7rem;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  transition: background 0.3s ease;
+  margin-bottom: 1rem;
+  font-size: 0.73rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.file-button:hover {
+  background: #1976d2;
+}
+
+/* Reset button - SIMPLIFIED */
+.reset-btn {
+  width: 100%;
+  background: #ff5722;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.73rem;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.reset-btn:hover {
+  background: #e64a19;
+}
+
+/* ===== PROFILE SECTION (RIGHT) - SIMPLIFIED ===== */
+.profile-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 13px;
+  box-shadow: 0 8px 27px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profile-section h2 {
+  color: #333;
+  margin-bottom: 1.3rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* Profile card - SIMPLIFIED */
+.profile-card {
+  text-align: center;
+  padding: 0.67rem;
+}
+
+/* Avatar container - SMALLER */
+.avatar-container {
+  margin-bottom: 1.67rem;
+  position: relative;
+}
+
+.avatar-image {
+  width: 133px;
+  height: 133px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #4caf50;
+  box-shadow: 0 5px 17px rgba(0, 0, 0, 0.3);
+}
+
+.avatar-placeholder {
+  width: 133px;
+  height: 133px;
+  border-radius: 50%;
+  background: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  border: 3px dashed #ddd;
+}
+
+.avatar-placeholder span {
+  font-size: 2.67rem;
+  color: #999;
+  margin-bottom: 0.33rem;
+}
+
+.avatar-placeholder p {
+  color: #999;
+  margin: 0;
+  font-size: 0.73rem;
+  font-weight: 500;
+}
+
+/* Profile info - SIMPLIFIED */
+.profile-info h3 {
+  color: #333;
+  margin: 0 0 0.67rem 0;
+  font-size: 1.47rem;
+  font-weight: 700;
+}
+
+.title {
+  color: #666;
+  font-size: 0.87rem;
+  margin: 0 0 0.53rem 0;
+  font-weight: 500;
+}
+
+.email {
+  color: #999;
+  margin: 0 0 1.67rem 0;
+  font-size: 0.73rem;
+}
+
+/* Stats - SIMPLIFIED */
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin: 1.67rem 0;
+  padding: 1.33rem 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  background: #fafafa;
+  border-radius: 8px;
+}
+
+.stat {
+  text-align: center;
+  padding: 0.67rem;
+}
+
+.number {
+  display: block;
+  font-size: 1.33rem;
+  font-weight: 800;
+  color: #333;
+}
+
+.label {
+  color: #666;
+  font-size: 0.67rem;
+  font-weight: 500;
+  margin-top: 0.33rem;
+}
+
+/* Profile button - SIMPLIFIED */
+.profile-btn {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.73rem;
+  font-weight: 600;
+  transition: background 0.3s ease;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.profile-btn:hover {
+  background: #45a049;
+}

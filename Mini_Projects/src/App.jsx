@@ -8,7 +8,8 @@
 // import { ThemeProvider } from "./Components/TodoApp/ThemeContext";
 // import RandomBGInterval from "./Components/RandomBackgoundInterval";
 // import Calculator from "./Components/Calculator";
-import Pomodoro from "./Components/Pomodoro";
+// import Pomodoro from "./Components/Pomodoro";
+import FileUploadDrop from "./Components/DragDropUpload";
 
 function App() {
   return (
@@ -24,7 +25,8 @@ function App() {
       </ThemeProvider> */}
       {/* <RandomBGInterval /> */}
       {/* <Calculator /> */}
-      <Pomodoro />
+      {/* <Pomodoro /> */}
+      <FileUploadDrop />
     </>
   );
 }
