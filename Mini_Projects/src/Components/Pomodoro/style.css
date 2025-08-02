@@ -1,0 +1,254 @@
+/* Pomodoro Timer Simple Blue Theme */
+.pomodoro-container {
+  max-width: 320px;
+  margin: 2.2rem auto;
+  padding: 2.2rem 1.5rem 1.5rem 1.5rem;
+  background: #fff;
+  border-radius: 20px;
+  font-family: "Quicksand", "Segoe UI", Arial, sans-serif;
+  color: #1976d2;
+  border: 1.5px solid #e3f7fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 420px;
+  box-shadow: 0 2px 16px 0 #e3f7fa;
+}
+.pomodoro-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1.3rem;
+}
+.pomodoro-header h1 {
+  flex: 1;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #1976d2;
+  margin: 0;
+  letter-spacing: 1.2px;
+}
+.settings-btn {
+  background: none;
+  border: none;
+  color: #1976d2;
+  font-size: 1.05rem;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 0.2rem 0.3rem;
+}
+.settings-btn:hover {
+  background: #f3f8fa;
+}
+.setting-section {
+  background: #f8fbfd;
+  border-radius: 10px;
+  padding: 0.6rem 0.7rem;
+  margin-bottom: 1.1rem;
+  border: 1px solid #e3f7fa;
+  width: 100%;
+  max-width: 210px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.time-setting {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.setting-label {
+  font-weight: 600;
+  color: #1976d2;
+  font-size: 0.67rem;
+}
+.time-value {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #1976d2;
+  margin-left: 0.3rem;
+}
+.setting-input-group {
+  display: flex;
+  align-items: center;
+  gap: 0.33rem;
+}
+.time-input {
+  width: 36px;
+  padding: 0.22rem;
+  border: 1px solid #1976d2;
+  border-radius: 4px;
+  font-size: 0.67rem;
+  text-align: center;
+  font-weight: bold;
+  color: #1976d2;
+  background: #fff;
+}
+.time-input:focus {
+  outline: none;
+  border-color: #57cc99;
+  box-shadow: 0 0 0 2px #b2ebf2;
+}
+.input-error {
+  border-color: #f44336 !important;
+  background: #fff3f3;
+}
+.input-error-text {
+  color: #f44336;
+  font-size: 0.67rem;
+  margin-top: 0.2rem;
+  margin-left: 0.13rem;
+}
+.save-btn,
+.cancel-btn {
+  padding: 0.18rem 0.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.67rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: #1976d2;
+  color: #fff;
+}
+.save-btn:hover,
+.cancel-btn:hover {
+  background: #1251a3;
+}
+.timer-display {
+  text-align: center;
+  margin: 1.1rem 0 1.1rem 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Wrapper căn giữa vòng tròn và thời gian */
+.progress-circle-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 170px;
+  height: 170px;
+}
+
+.progress-circle {
+  position: relative;
+  display: inline-block;
+  width: 170px;
+  height: 170px;
+}
+.progress-ring {
+  display: block;
+  margin: 0 auto;
+  filter: none;
+  transform: rotate(-90deg); /* Bắt đầu từ 12h */
+  width: 170px;
+  height: 170px;
+}
+.progress-ring-bg {
+  stroke: #e3f7fa;
+  stroke-width: 8;
+  fill: none;
+}
+.progress-ring-bar {
+  stroke: #1976d2;
+  stroke-width: 8;
+  fill: none;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.5s linear;
+}
+/* Căn giữa thời gian lớn trong vòng tròn */
+.time-display-centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  z-index: 2;
+  pointer-events: none;
+  gap: 0.13rem;
+}
+.time-text-large {
+  font-size: 2.3rem;
+  font-weight: 900;
+  color: #1976d2;
+  margin: 0 0 0.13rem 0;
+  letter-spacing: 1.2px;
+  font-family: "Quicksand", "Segoe UI", Arial, sans-serif;
+  line-height: 1.1;
+}
+.timer-status {
+  font-size: 0.7rem;
+  color: #1976d2;
+  font-weight: 600;
+  background: #f8fbfd;
+  border-radius: 4px;
+  padding: 0.09rem 0.4rem;
+  margin-top: 0.13rem;
+  min-width: 50px;
+  text-align: center;
+  user-select: none;
+  letter-spacing: 0.67px;
+}
+.timer-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  margin-top: 1.3rem;
+}
+.control-btn,
+.toggle-btn,
+.reset-btn {
+  width: 140px;
+  min-width: 140px;
+  max-width: 140px;
+  min-height: 38px;
+  padding: 0 0.7rem;
+  border: none;
+  border-radius: 13px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  color: #fff;
+  background: #1976d2;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  box-shadow: none;
+  transition: background 0.18s;
+}
+
+/* Đảm bảo icon trong nút luôn căn giữa với text và không làm lệch nút */
+.toggle-btn svg,
+.control-btn svg {
+  display: block;
+  margin: 0;
+  margin-right: 0.5rem;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  align-self: center;
+}
+.control-btn:disabled,
+.control-btn.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  filter: grayscale(0.2);
+}
+.toggle-btn:hover,
+.reset-btn:hover,
+.control-btn:hover {
+  background: #1251a3;
+}

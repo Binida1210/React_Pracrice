@@ -1,0 +1,198 @@
+/* Konosuba Theme Colors */
+/* Konosuba Pastel Theme Colors */
+:root {
+  --aqua: #7ecbff; /* Aqua - Pastel Blue */
+  --megumin: #ff8a80; /* Megumin - Pastel Red */
+  --darkness: #fff59d; /* Darkness - Pastel Yellow */
+  --kazuma: #81c784; /* Kazuma - Pastel Green */
+}
+/* Key Style for all buttons (dùng cho .calculator-btn và .calculator-key) */
+.calculator-btn,
+.calculator-key {
+  background: #f7f7f7;
+  color: #222;
+  font-size: 1.15rem;
+  border: none;
+  border-radius: 16px;
+  padding: 0;
+  height: 56px;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s, box-shadow 0.15s;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  font-weight: 500;
+  width: 100%;
+  outline: none;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.calculator-btn:hover,
+.calculator-key:hover {
+  background: #ececec;
+  color: #222;
+  transform: scale(1.03);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Konosuba Megumin - Pastel Red */
+.konosuba-megumin {
+  background: var(--megumin) !important;
+  color: #fff !important;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(255, 138, 128, 0.1);
+}
+.konosuba-megumin:hover {
+  background: #ff5252 !important;
+  color: #fff !important;
+}
+
+/* Konosuba Darkness - Pastel Yellow */
+.konosuba-darkness {
+  background: var(--darkness) !important;
+  color: #222 !important;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(255, 245, 157, 0.1);
+}
+.konosuba-darkness:hover {
+  background: #fffde7 !important;
+  color: #222 !important;
+}
+
+/* Konosuba Kazuma - Pastel Green */
+.konosuba-kazuma {
+  background: var(--kazuma) !important;
+  color: #fff !important;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(129, 199, 132, 0.1);
+}
+.konosuba-kazuma:hover {
+  background: #388e3c !important;
+  color: #fff !important;
+}
+/* Konosuba Aqua - Pastel Blue */
+.konosuba-aqua {
+  background: var(--aqua) !important;
+  color: #fff !important;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(126, 203, 255, 0.1);
+}
+.konosuba-aqua:hover {
+  background: #0288d1 !important;
+  color: #fff !important;
+}
+/* Calculator Container - Bright, Card Style */
+.calculator {
+  width: 340px;
+  margin: 40px auto;
+  padding: 24px 16px;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Display - Card Style (cố định chiều cao, không nhảy khi nhập số) */
+.calculator-display {
+  background: #f6f6f6;
+  color: #222;
+  font-size: 2rem;
+  padding: 18px 14px 8px 14px;
+  border-radius: 16px;
+  text-align: right;
+  letter-spacing: 1.5px;
+  min-height: 60px;
+  max-height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+  border: none;
+  overflow: hidden;
+}
+
+/* Keypad Grid (căn đều, tối ưu bố cục) */
+.calculator-keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 56px;
+  gap: 12px;
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+  .calculator {
+    width: 98vw;
+    padding: 8px;
+  }
+  .calculator-display {
+    font-size: 1rem;
+    padding: 6px;
+    border-radius: 10px;
+    min-height: 36px;
+    max-height: 36px;
+  }
+  .calculator-btn,
+  .calculator-key {
+    font-size: 0.95rem;
+    border-radius: 8px;
+    height: 100%;
+    padding: 0;
+  }
+  .calculator-keypad {
+    gap: 6px;
+    grid-auto-rows: 38px;
+  }
+}
+
+/* Operator Buttons - Soft Gray */
+.calculator-btn.operator {
+  background: #ededed;
+  color: #222;
+  font-weight: 600;
+}
+.calculator-btn.operator:hover {
+  background: #d6d6d6;
+  color: #222;
+}
+
+/* Function Buttons (AC, =, etc.) */
+.calculator-btn.function {
+  background: #ff6f6f;
+  color: #fff;
+  font-weight: 600;
+}
+.calculator-btn.function:hover {
+  background: #ff5252;
+  color: #fff;
+}
+.calculator-btn.equal {
+  background: #aeea00;
+  color: #fff;
+  font-weight: 600;
+}
+.calculator-btn.equal:hover {
+  background: #8bc34a;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+  .calculator {
+    width: 98vw;
+    padding: 10px;
+  }
+  .calculator-display {
+    font-size: 1.1rem;
+    padding: 8px;
+    border-radius: 12px;
+  }
+  .calculator-btn {
+    font-size: 1rem;
+    padding: 12px 0;
+    border-radius: 10px;
+  }
+}
