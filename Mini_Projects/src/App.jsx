@@ -9,7 +9,7 @@
 // import RandomBGInterval from "./Components/RandomBackgoundInterval";
 // import Calculator from "./Components/Calculator";
 // import Pomodoro from "./Components/Pomodoro";
-import FileUploadDrop from "./Components/DragDropUpload";
+// import FileUploadDrop from "./Components/FileUploadDrop";
 
 function App() {
   return (
@@ -26,7 +26,8 @@ function App() {
       {/* <RandomBGInterval /> */}
       {/* <Calculator /> */}
       {/* <Pomodoro /> */}
-      <FileUploadDrop />
+      {/* <FileUploadDrop /> */}
+      Ahjhj
     </>
   );
 }
